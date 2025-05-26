@@ -1,7 +1,7 @@
 const Donation = require('../models/Donation');
 const User = require('../models/User');
 const transporter = require('../config/emailConfig');
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')(sk_test_51RLkF5CWd0e1OS3ohXo57W7u9J09OWwefh0MKrDhBma3wDwglZMPY5WG6sYZnNjJk8LyAOMwSbb3Iryh93xfVzSp00xYbElE35);
 
 const currencyConfig = {
   pkr: { minAmount: 50, zeroDecimal: true },
